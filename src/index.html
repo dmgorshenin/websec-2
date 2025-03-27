@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прибывалка электричек</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="header">
+            <h1>Расписание электричек</h1>
+            <nav>
+                <a href="./index.html">Главная</a>
+                <a href="./routes.html">Маршруты</a>
+            </nav>
+        </header>
+    <div class="container">
+        
+
+        <div class="search-section">
+            <div class="search-box">
+                <div class="search-box-input">
+                    <input type="text" id="stationSearch" class="input-search" placeholder="Поиск станции...">
+                    <div class="loader"></div>
+                </div>
+                <button id="searchButton" class="search-button">Поиск</button>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <div class="favorites" id="favoritesSection">
+                <h3>Недавние станции:</h3>
+                <div class="favorites-list" id="favoritesList"></div>
+            </div>
+        </div>
+        <div class="map-section">
+            <div id="yandexMap" style="width: 100%; height: 600px;"></div>
+        </div>
+        <div class="schedule-section">
+            <div class="schedule-view" id="scheduleView"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

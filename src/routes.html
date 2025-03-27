@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск маршрута</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Поиск маршрута</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="routes.html">Маршруты</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="search-section">
+            <h3>Выберите станции</h3>
+            <div class="search-box">
+                <div class="search-box-input">
+                    <div class="station-box">
+                        <input type="text" id="fromStation" class="input-search" placeholder="Откуда">
+                        <div class="suggestions" id="searchResults"></div>
+                    </div>
+                    <div class="station-box">
+                        <input type="text" id="toStation" class="input-search" placeholder="Куда">
+                        <div class="suggestions" id="searchResults"></div>
+                    </div>
+                    <button id="findRoute" class="search-button">Найти маршрут</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="schedule-section">
+            <div class="schedule-view" id="scheduleView"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./routes.js"></script>
+</body>
+
+</html>
